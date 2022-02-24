@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+:root {
+  --basic-color: steelblue;
+  --sac-color: lightblue;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: var(--basic-color);
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.404);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--sac-color);
+}
+
+.container .btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: var(--sac-color);
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.container .btn:focus {
+  outline: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: var(--sac-color);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+/*# sourceMappingURL=main.css.map */
